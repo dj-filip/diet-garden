@@ -4,7 +4,7 @@ function MealBox({ meal }) {
 
   const { name, image } = meal;
 
-  const imageUrl = `http://localhost:4000/uploads/images/meals/${image}`;
+  const imageUrl = `${import.meta.env.VITE_IMAGES_URL}${image}`;
 
   return (
     <div className="meal-box-wrap">

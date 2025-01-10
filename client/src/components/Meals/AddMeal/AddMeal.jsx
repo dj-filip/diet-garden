@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
+import { BACKEND_URL } from "../../../config/serverConfig";
 
-const URL = `http://localhost:4000/groceries/getGroceries`;
 
 function AddMeal() {
   const [groceries, setGroceries] = useState([]);
@@ -9,12 +9,12 @@ function AddMeal() {
   const [isPopupVisible, setPopupVisible] = useState(false);
   const [hoveredGrocery, setHoveredGrocery] = useState(null);
 
-  const imageUrl = `http://localhost:4000/uploads/images/groceries/`;
+  const imageUrl = `${import.meta.env.VITE_IMAGES_URL}`;
 
   useEffect(() => {
     // Fetch groceries from the backend to show in the popup
     async function fetchGroceries() {
-      const response = await fetch(URL);
+      const response = await fetch(`${BACKEND_URL}/groceries/getGroceries`);
       const data = await response.json();
       setGroceries(data);
     }
@@ -54,7 +54,7 @@ function AddMeal() {
     // }
 
     try {
-      const response = await fetch('http://localhost:4000/meals/addMeal', {
+      const response = await fetch(`${BACKEND_URL}/meals/addMeal`, {
         method: 'POST',
         body: formData,
       });

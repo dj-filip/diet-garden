@@ -5,7 +5,7 @@ function GroceryBox({ groceryData, onClick }) {
 
   const { groceryName: name, groceryImage: image, groceryNutrients: nutrients } = groceryData;
 
-  const imageUrl = `http://localhost:4000/uploads/images/groceries/${image}`;
+  const imageUrl = `${import.meta.env.VITE_IMAGES_URL}${image}`
 
   return (
     // <NavLink to="grocery">

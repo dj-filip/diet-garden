@@ -1,8 +1,6 @@
 
 const Grocery = require("../models/groceryModel");
 
-const BASE_URL = 'https://api.nal.usda.gov/fdc/v1/food/';
-const API_KEY = 'vxdzYBw5AbIUS4WVudGo8E7pYrgR73TGEXf0tav0';
 
 const fetchData = async () => {
   const fetchedGroceries = [];

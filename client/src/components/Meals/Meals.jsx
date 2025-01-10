@@ -2,9 +2,7 @@ import { useEffect, useState } from "react";
 import MealBox from "./MealBox/MealBox";
 import { Link, NavLink } from "react-router-dom";
 
-
-const URL = `http://localhost:4000/meals/getMeals`;
-
+import { BACKEND_URL } from "../../config/serverConfig";
 
 function Meals() {
 
@@ -15,7 +13,7 @@ function Meals() {
 
     const fetchMeals = async () => {
 
-      const result = await fetch(URL);
+      const result = await fetch(`${BACKEND_URL}/meals/getMeals`);
       const data = await result.json();
 
       setMealsData(data);

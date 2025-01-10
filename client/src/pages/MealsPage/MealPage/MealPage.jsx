@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
 
-
-const URL = `http://localhost:4000/groceries/getGroceries`;
+import { BACKEND_URL } from "../../../config/serverConfig";
 
 
 function MealPage() {
@@ -13,14 +12,14 @@ function MealPage() {
   const { id } = useParams();
   const mealData = location.state?.meal;
 
-  const imageUrl = `http://localhost:4000/uploads/images/`;
+  const imageUrl = `${import.meta.env.VITE_IMAGES_URL}`;
 
 
 
   useEffect(() => {
     const fetchIngredients = async (ingredients) => {
       const query = ingredients.map(id => `ids=${id}`).join('&');
-      const response = await fetch(`${URL}?${query}`, {
+      const response = await fetch(`${`${BACKEND_URL}/groceries/getGroceries`}?${query}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'
@@ -46,11 +45,11 @@ function MealPage() {
     <div className="meal-page-wrap">
       <h2 className="meal-heading">{mealData.name}</h2>
       <div className="flex meal-hero-wrap">
-        <img className="meal-img" src={`${imageUrl}meals/${mealData.image}`} alt={mealData.name} />
+        <img className="meal-img" src={`${imageUrl}${mealData.image}`} alt={mealData.name} />
         <div className="flex meal-page-ingredients-wrap">
           {ingredients.map(ingredient => (
             <div className="flex align-center ingredient-box-wrap">
-              <img className="ingredient-box-img-th" src={`${imageUrl}groceries/${ingredient.image}`} alt={ingredient.name} />
+              <img className="ingredient-box-img-th" src={`${imageUrl}${ingredient.image}`} alt={ingredient.name} />
               <div className="ingredient-box-heading-wrap">
                 <h4 className="ingredient-box-heading">{ingredient.name}</h4>
               </div>

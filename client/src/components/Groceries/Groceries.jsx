@@ -2,9 +2,7 @@ import { useEffect, useState } from "react";
 import GroceriesTabsNav from "./GroceriesTabsNav/GroceriesTabsNav";
 import GroceryBox from "./GroceryBox/GroceryBox";
 
-
-
-const URL = `http://localhost:4000/groceries/getGroceries`;
+import { BACKEND_URL } from "../../config/serverConfig";
 
 
 function Groceries({ selectedGrocery, setSelectedGrocery }) {
@@ -16,7 +14,7 @@ function Groceries({ selectedGrocery, setSelectedGrocery }) {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await fetch(URL);
+      const result = await fetch(`${BACKEND_URL}/groceries/getGroceries` );
       const data = await result.json();
 
       setGroceriesData(data);

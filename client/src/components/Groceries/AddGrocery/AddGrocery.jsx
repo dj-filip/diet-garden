@@ -1,4 +1,4 @@
-
+import { BACKEND_URL } from "../../../config/serverConfig";
 
 function AddGrocery() {
 
@@ -19,7 +19,7 @@ function AddGrocery() {
     // }
 
     try {
-      const response = await fetch('http://localhost:4000/groceries/addGrocery', {
+      const response = await fetch(`${BACKEND_URL}/groceries/addGrocery`, {
         method: 'POST',
         body: formData,
       });
