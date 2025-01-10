@@ -3,12 +3,12 @@ data/
 
 
 # Public images and assets (if auto-generated or large)
-client/public/images/        # Images in the client public folder (can be large and auto-generated)
-server/uploads/              # Server uploads (can contain large files)
+client/public/images/        
+server/uploads/              
 
 # Server-side data files (if auto-generated or sensitive)
-server/groceries.json        # Groceries data (if auto-generated or sensitive)
-server/meals.json            # Meals data (if auto-generated or sensitive)
+server/groceries.json        
+server/meals.json           
 
 # Client-specific ignores
 client/.env
