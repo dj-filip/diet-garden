@@ -1,0 +1,624 @@
+{
+  "_id": {
+    "$oid": "66e86a7dc2b81a7cd923fd24"
+  },
+  "name": "Eggs",
+  "fdcid": 171287,
+  "category": "Protein",
+  "image": "image-1726507645760.png",
+  "createdAt": {
+    "$date": "2024-09-16T17:27:25.77Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-16T17:27:25.77Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66e876ed6275391aa784f8fc"
+  },
+  "name": "Oats",
+  "fdcid": 2346396,
+  "category": "Carbs",
+  "image": "image-1726510829139.png",
+  "createdAt": {
+    "$date": "2024-09-16T18:20:29.184Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-16T18:20:29.184Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66e974ffde4c473e89aad01c"
+  },
+  "name": "Spinach",
+  "fdcid": 1999633,
+  "category": "Veggies",
+  "image": "image-1726575871457.png",
+  "createdAt": {
+    "$date": "2024-09-17T12:24:31.482Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-17T12:24:31.482Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66e97520de4c473e89aad020"
+  },
+  "name": "Chicken",
+  "fdcid": 2646170,
+  "category": "Protein",
+  "image": "image-1726575904040.png",
+  "createdAt": {
+    "$date": "2024-09-17T12:25:04.048Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-17T12:25:04.048Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66e9752fde4c473e89aad022"
+  },
+  "name": "Salmon",
+  "fdcid": 2684441,
+  "category": "Protein",
+  "image": "image-1726575919042.png",
+  "createdAt": {
+    "$date": "2024-09-17T12:25:19.047Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-17T12:25:19.047Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66e97542de4c473e89aad024"
+  },
+  "name": "Tuna",
+  "fdcid": 175157,
+  "category": "Protein",
+  "image": "image-1726575938622.png",
+  "createdAt": {
+    "$date": "2024-09-17T12:25:38.626Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-17T12:25:38.626Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66e9756fde4c473e89aad028"
+  },
+  "name": "Rice",
+  "fdcid": 2512381,
+  "category": "Carbs",
+  "image": "image-1726575983439.png",
+  "createdAt": {
+    "$date": "2024-09-17T12:26:23.443Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-17T12:26:23.443Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66e97584de4c473e89aad02a"
+  },
+  "name": "Polenta",
+  "fdcid": 2708375,
+  "category": "Carbs",
+  "image": "image-1726576004869.png",
+  "createdAt": {
+    "$date": "2024-09-17T12:26:44.873Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-17T12:26:44.873Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66e9759cde4c473e89aad02c"
+  },
+  "name": "Potatoes",
+  "fdcid": 2346403,
+  "category": "Carbs",
+  "image": "image-1726576028699.png",
+  "createdAt": {
+    "$date": "2024-09-17T12:27:08.706Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-17T12:27:08.706Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66effa51e4b1bb91198bc6b8"
+  },
+  "name": "Olive Oil",
+  "fdcid": 171413,
+  "category": "Fats",
+  "image": "image-1727003217398.png",
+  "createdAt": {
+    "$date": "2024-09-22T11:06:57.43Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-22T11:06:57.43Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66f14ad07e5b24cd406de84d"
+  },
+  "name": "Lentils",
+  "fdcid": 175254,
+  "category": "Veggies",
+  "image": "image-1727089359920.png",
+  "createdAt": {
+    "$date": "2024-09-23T11:02:40.041Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-23T11:02:40.041Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66f14f387e5b24cd406de851"
+  },
+  "name": "Goat Yogurt",
+  "fdcid": 2399271,
+  "category": "Fats",
+  "image": "image-1727090488493.png",
+  "createdAt": {
+    "$date": "2024-09-23T11:21:28.519Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-23T11:21:28.519Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66f150637e5b24cd406de859"
+  },
+  "name": "Salt",
+  "fdcid": 746775,
+  "category": "Herbs & Spices",
+  "image": "image-1727090787101.png",
+  "createdAt": {
+    "$date": "2024-09-23T11:26:27.113Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-23T11:26:27.113Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66f40a569f9381b33c38cdcc"
+  },
+  "name": "Kale",
+  "fdcid": 323505,
+  "category": "Veggies",
+  "image": "image-1727269462738.png",
+  "createdAt": {
+    "$date": "2024-09-25T13:04:22.768Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T13:04:22.768Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66f40a9f9f9381b33c38cdd0"
+  },
+  "name": "Carrots",
+  "fdcid": 2258586,
+  "category": "Veggies",
+  "image": "image-1727269535231.png",
+  "createdAt": {
+    "$date": "2024-09-25T13:05:35.239Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T13:05:35.239Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66f40ab69f9381b33c38cdd4"
+  },
+  "name": "Broccoli",
+  "fdcid": 747447,
+  "category": "Veggies",
+  "image": "image-1727269558006.png",
+  "createdAt": {
+    "$date": "2024-09-25T13:05:58.019Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T13:05:58.019Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66f40acc9f9381b33c38cdd8"
+  },
+  "name": "Beets",
+  "fdcid": 2685576,
+  "category": "Veggies",
+  "image": "image-1727269580345.png",
+  "createdAt": {
+    "$date": "2024-09-25T13:06:20.348Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T13:06:20.348Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66f40af09f9381b33c38cddc"
+  },
+  "name": "Beans",
+  "fdcid": 2644285,
+  "category": "Veggies",
+  "image": "image-1727269616508.png",
+  "createdAt": {
+    "$date": "2024-09-25T13:06:56.512Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T13:06:56.512Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66f40b109f9381b33c38cde0"
+  },
+  "name": "Lard",
+  "fdcid": 171401,
+  "category": "Fats",
+  "image": "image-1727269648928.png",
+  "createdAt": {
+    "$date": "2024-09-25T13:07:28.944Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T13:07:28.944Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66f40b309f9381b33c38cde4"
+  },
+  "name": "Pork Scratchings",
+  "fdcid": 2705902,
+  "category": "Fats",
+  "image": "image-1727269680292.png",
+  "createdAt": {
+    "$date": "2024-09-25T13:08:00.308Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T13:08:00.308Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66f40b4b9f9381b33c38cde8"
+  },
+  "name": "Avocado",
+  "fdcid": 171705,
+  "category": "Fats",
+  "image": "image-1727269707784.png",
+  "createdAt": {
+    "$date": "2024-09-25T13:08:27.788Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T13:08:27.788Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66f40b6b9f9381b33c38cdec"
+  },
+  "name": "Banana",
+  "fdcid": 1105314,
+  "category": "Fruits",
+  "image": "image-1727269739143.png",
+  "createdAt": {
+    "$date": "2024-09-25T13:08:59.148Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T13:08:59.148Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66f40bb19f9381b33c38cdf0"
+  },
+  "name": "Apples",
+  "fdcid": 1750343,
+  "category": "Fruits",
+  "image": "image-1727269809609.png",
+  "createdAt": {
+    "$date": "2024-09-25T13:10:09.615Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T13:10:09.615Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66f40bcd9f9381b33c38cdf4"
+  },
+  "name": "Pomegranate",
+  "fdcid": 169134,
+  "category": "Fruits",
+  "image": "image-1727269837787.png",
+  "createdAt": {
+    "$date": "2024-09-25T13:10:37.792Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T13:10:37.792Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66f40bfc9f9381b33c38cdf8"
+  },
+  "name": "Lime",
+  "fdcid": 168155,
+  "category": "Fruits",
+  "image": "image-1727269884177.png",
+  "createdAt": {
+    "$date": "2024-09-25T13:11:24.183Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T13:11:24.183Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66f40c1d9f9381b33c38cdfc"
+  },
+  "name": "Walnuts",
+  "fdcid": 2346394,
+  "category": "Nuts, Seeds & Dried Fruits",
+  "image": "image-1727269917574.png",
+  "createdAt": {
+    "$date": "2024-09-25T13:11:57.579Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T13:11:57.579Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66f40c389f9381b33c38ce00"
+  },
+  "name": "Dates",
+  "fdcid": 168191,
+  "category": "Nuts, Seeds & Dried Fruits",
+  "image": "image-1727269944765.png",
+  "createdAt": {
+    "$date": "2024-09-25T13:12:24.77Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T13:12:24.77Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66f40c579f9381b33c38ce04"
+  },
+  "name": "Green Tea",
+  "fdcid": 171917,
+  "category": "Teas",
+  "image": "image-1727269975497.png",
+  "createdAt": {
+    "$date": "2024-09-25T13:12:55.51Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T13:12:55.51Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66f40c799f9381b33c38ce08"
+  },
+  "name": "Honey",
+  "fdcid": 169640,
+  "category": "Other",
+  "image": "image-1727270009779.png",
+  "createdAt": {
+    "$date": "2024-09-25T13:13:29.79Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T13:13:29.79Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66f4178c9f9381b33c38ce22"
+  },
+  "name": "Chickpeas",
+  "fdcid": 2644288,
+  "category": "Veggies",
+  "image": "image-1727272844955.png",
+  "createdAt": {
+    "$date": "2024-09-25T14:00:44.979Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T14:00:44.979Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66f41c019f9381b33c38ce26"
+  },
+  "name": "Sardines",
+  "fdcid": 175139,
+  "category": "Protein",
+  "image": "image-1727273985052.png",
+  "createdAt": {
+    "$date": "2024-09-25T14:19:45.084Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T14:19:45.084Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66f41fe79f9381b33c38ce2a"
+  },
+  "name": "Pepper",
+  "fdcid": 170931,
+  "category": "Herbs & Spices",
+  "image": "image-1727274983623.png",
+  "createdAt": {
+    "$date": "2024-09-25T14:36:23.678Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T14:36:23.678Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66f4200e9f9381b33c38ce2e"
+  },
+  "name": "Chives",
+  "fdcid": 169994,
+  "category": "Herbs & Spices",
+  "image": "image-1727275022524.png",
+  "createdAt": {
+    "$date": "2024-09-25T14:37:02.53Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-25T14:37:02.53Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66ffd9f5a7f984c1917c68bf"
+  },
+  "name": "Celery Root",
+  "fdcid": 170400,
+  "category": "Veggies",
+  "image": "image-1728043509615.png",
+  "createdAt": {
+    "$date": "2024-10-04T12:05:09.643Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-04T12:05:09.643Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66ffda36a7f984c1917c68c3"
+  },
+  "name": "Sour Cream",
+  "fdcid": 2346387,
+  "category": "Fats",
+  "image": "image-1728043574628.png",
+  "createdAt": {
+    "$date": "2024-10-04T12:06:14.634Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-04T12:06:14.634Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66ffda92a7f984c1917c68c7"
+  },
+  "name": "Peanuts",
+  "fdcid": 2515376,
+  "category": "Nuts, Seeds & Dried Fruits",
+  "image": "image-1728043666781.png",
+  "createdAt": {
+    "$date": "2024-10-04T12:07:46.786Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-04T12:07:46.786Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66ffdaf9a7f984c1917c68cb"
+  },
+  "name": "Sesame",
+  "fdcid": 170150,
+  "category": "Nuts, Seeds & Dried Fruits",
+  "image": "image-1728043769136.png",
+  "createdAt": {
+    "$date": "2024-10-04T12:09:29.14Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-04T12:09:29.14Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66ffe7f5a7f984c1917c68ee"
+  },
+  "name": "Quinoa",
+  "fdcid": 168917,
+  "category": "Veggies",
+  "image": "image-1728047093309.png",
+  "createdAt": {
+    "$date": "2024-10-04T13:04:53.318Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-04T13:04:53.318Z"
+  },
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "66ffeb31a7f984c1917c68f2"
+  },
+  "name": "Beef Steak",
+  "fdcid": 2646172,
+  "category": "Protein",
+  "image": "image-1728047921072.png",
+  "createdAt": {
+    "$date": "2024-10-04T13:18:41.084Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-04T13:18:41.084Z"
+  },
+  "__v": 0
+}
