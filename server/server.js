@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const router = require('./routes/router');
 const mongoose = require('mongoose');
+const cloudinary = require('cloudinary').v2;
 
 const app = express();
 
@@ -20,10 +21,15 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use('/', router);
 
-const port = 4000;
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
+})
 
+const port = process.env.PORT;
 
-mongoose.connect('mongodb+srv://admin:root@dietgardencluster.tgwtc.mongodb.net/dietgardendb?retryWrites=true&w=majority&appName=DietGardenCluster').then(() => {
+mongoose.connect(process.env.MONGO_URI).then(() => {
   console.log('connected to MongoDB');
   const server = app.listen(port, () => {
     console.log(`Server is running on port ${port}`);

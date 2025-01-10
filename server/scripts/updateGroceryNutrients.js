@@ -3,12 +3,6 @@
 const mongoose = require("mongoose");
 const Grocery = require("../models/groceryModel");
 
-const BASE_URL = 'https://api.nal.usda.gov/fdc/v1/food/';
-const API_KEY = 'vxdzYBw5AbIUS4WVudGo8E7pYrgR73TGEXf0tav0';
-
-const MONGO_URI = "mongodb+srv://admin:root@dietgardencluster.tgwtc.mongodb.net/dietgardendb?retryWrites=true&w=majority&appName=DietGardenCluster";
-
-
 
 const fetchData = async () => {
   const fetchedGroceries = [];
@@ -119,7 +113,7 @@ const fetchData = async () => {
     const grocery = await Grocery.findById("6776b4b74e976d10bf74941a");
 
     const { _id: groceryId, name: groceryName, fdcid: groceryFDCID, category: groceryCategory, image: groceryImage } = grocery;
-    const URL = `${BASE_URL}/${groceryFDCID}?api_key=${API_KEY}&format=abridged`;
+    const URL = `${FOOD_DATA_BASE_URL}/${groceryFDCID}?api_key=${FOOD_DATA_API_KEY}&format=abridged`;
 
     try {
       const response = await fetch(URL);
@@ -171,7 +165,7 @@ const fetchData = async () => {
 
 const main = async () => {
   try {
-    await mongoose.connect(MONGO_URI);
+    await mongoose.connect(process.env.MONGO_URI);
     console.log('Connected to MongoDB');
 
     await fetchData();
