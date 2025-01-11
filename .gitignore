@@ -44,6 +44,7 @@ server/logs
 server/.env
 server/uploads
 server/config
+server/scripts
 
 # Common ignores
 *.log
