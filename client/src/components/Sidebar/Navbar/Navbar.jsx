@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <ul className="navbar-list">
       <li>
-        <NavLink to="/groceries"><GroceriesIcon />Groceries</NavLink>
+        <NavLink to="/"><GroceriesIcon />Groceries</NavLink>
       </li>
       <li>
         <NavLink to="/meals"><MealsIcon />Meals</NavLink>

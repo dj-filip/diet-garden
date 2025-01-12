@@ -13,7 +13,7 @@ import AddMealPage from "../pages/DashboardPage/AddMealPage/AddMealPage";
 function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      <Route path="/" element={<GroceriesPage />} />
       <Route path="/groceries">
         <Route index element={<GroceriesPage />} />
         <Route path="grocery" element={<GroceryPage />} />
