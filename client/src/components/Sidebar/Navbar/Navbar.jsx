@@ -1,14 +1,16 @@
 import { NavLink } from "react-router-dom";
+import GroceriesIcon from "../../Icons/GroceriesIcon";
+import MealsIcon from "../../Icons/MealsIcon";
 
 
 function Navbar() {
   return (
     <ul className="navbar-list">
       <li>
-        <NavLink to="/groceries">Groceries</NavLink>
+        <NavLink to="/groceries"><GroceriesIcon />Groceries</NavLink>
       </li>
       <li>
-        <NavLink to="/meals">Meals</NavLink>
+        <NavLink to="/meals"><MealsIcon />Meals</NavLink>
       </li>
       {/* <li>
         <NavLink to="/meal-box-plan">Meal Plan</NavLink>

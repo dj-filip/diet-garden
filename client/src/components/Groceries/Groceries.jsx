@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
+
 import GroceriesTabsNav from "./GroceriesTabsNav/GroceriesTabsNav";
 import GroceryBox from "./GroceryBox/GroceryBox";
+
+import ListIcon from "../Icons/ListIcon";
+
 
 import { BACKEND_URL } from "../../config/serverConfig";
 
@@ -111,7 +115,10 @@ const categoryOrder = [
         setActiveTab={setActiveTab}
       />
       <div className="groceries-wrap">
-        <button onClick={() => setListMode(prevListMode => !prevListMode)}>LIST MODE</button>
+        <button 
+          onClick={() => setListMode(prevListMode => !prevListMode)}
+          className={`list-mode-btn ${listMode ? "list-mode-btn-active" : ""}`} 
+        ><ListIcon /></button>
         {listMode
           ? (
             <div className="list-mode-wrap">
