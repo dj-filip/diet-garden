@@ -222,7 +222,7 @@ button {
   transition: ease .3s all;
 }
 
-.navbar-list .active + svg {
+.navbar-list .active+svg {
   color: #7FC61D;
 }
 
@@ -490,6 +490,12 @@ textarea::placeholder {
 
 
 /* RESPONSIVE */
+@media screen and (max-width: 1500px) {
+  .meal-page-wrap {
+    width: 940px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .sidebar {
     position: absolute;
@@ -500,7 +506,7 @@ textarea::placeholder {
     z-index: 999;
   }
 
-  .sidebar > a {
+  .sidebar>a {
     display: none;
   }
 
@@ -536,3 +542,6 @@ textarea::placeholder {
     width: 100%;
   }
 }
+
+
+
