@@ -9,11 +9,11 @@ function GroceriesPage() {
 
   return (
     <>
-      <Groceries 
+      <Groceries
         selectedGrocery={selectedGrocery}
         setSelectedGrocery={setSelectedGrocery}
       />
-      <Infobar selectedGrocery={selectedGrocery}/>
+      <Infobar selectedGrocery={selectedGrocery} setSelectedGrocery={setSelectedGrocery} />
     </>
   )
 }
