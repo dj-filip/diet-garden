@@ -1,9 +1,7 @@
-import { Button } from "@/components/ui/button";
 import { 
   Drawer, 
   DrawerContent, 
   DrawerTitle, 
-  DrawerTrigger 
 } from "@/components/ui/drawer";
 import { GroceriesItem } from "../Groceries/Groceries";
 

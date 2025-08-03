@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button";
 import { ColumnDef } from "@tanstack/react-table";
-import { getRandomValues } from "crypto";
 import { Pencil, Trash } from "lucide-react";
 import Link from "next/link";
 
@@ -70,7 +69,7 @@ export const groceryColumns: ColumnDef<GroceryT>[] = [
       className: "text-center",
       headerClassName: "text-center",
     },
-    cell: ({ getValue, row }) => {
+    cell: ({ getValue }) => {
       const id = getValue<string>();
       return (
         <div className="flex items-center justify-center gap-2">

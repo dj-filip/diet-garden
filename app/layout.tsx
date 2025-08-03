@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Sidebar from "../components/MainSidebar/MainSidebar";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import MainSidebar from "../components/MainSidebar/MainSidebar";
-import GroceryDrawer from "./groceries/components/GroceryDrawer/GroceryDrawer";
+
 
 const inter = Inter({
   variable: "--font-inter",

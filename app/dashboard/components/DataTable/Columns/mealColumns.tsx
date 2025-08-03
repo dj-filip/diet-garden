@@ -2,7 +2,6 @@
 
 import { MealsItem } from "@/app/meals/components/Meals/Meals";
 import { Button } from "@/components/ui/button";
-import { Meal } from "@/models/mealModel";
 import { ColumnDef } from "@tanstack/react-table";
 import { Pencil, Trash } from "lucide-react";
 
@@ -54,7 +53,7 @@ export const mealColumns: ColumnDef<MealsItem>[] = [
       headerClassName: "text-center",
     },
     cell: ({ row }) => {
-      const grocery = row.original;         // full row object
+      
       return (
         <div className="flex items-center justify-center gap-2">
           <Button

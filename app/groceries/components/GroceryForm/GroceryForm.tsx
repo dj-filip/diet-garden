@@ -4,7 +4,6 @@ import { Form } from "@/components/ui/form";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
-import { z } from "zod";
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import TextFormField from "@/components/form/TextFormField";
@@ -50,8 +49,6 @@ function GroceryForm({ grocery }: GroceryProps) {
     }
   });
 
-
-  const isEdit = !!grocery;
 
   const handleFileChange = (files: File[] | null) => {
     setFiles(files);
