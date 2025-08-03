@@ -88,9 +88,6 @@ function isActiveLink(pathname: string, itemUrl: string) {
 function MainSidebar() {
 
   const pathname = usePathname();
-  const searchParams = useSearchParams();
-
-  const currentUrl = searchParams.toString() ? `${pathname}?${searchParams.toString()}` : pathname;
 
 
   return (
