@@ -5,5 +5,5 @@ Platform for diet and nutrition that offers healthy meal plans, recipes and nutr
 
 🥬 [Go To Live App](https://diet-garden.vercel.app/) 
 
-![diet-garden-presentation-bg](https://github.com/user-attachments/assets/331c042f-2e3b-4826-9592-fc4798679d49)
+![diet-garden-presentation-bg](https://github.com/user-attachments/assets/c16ee49a-66f8-40c0-b135-879901d6e42e)
 
