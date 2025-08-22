@@ -43,7 +43,7 @@ function Groceries({ groceries }: GroceriesProps) {
   return (
     <div>
       <GroceriesTabsNav activeTab={activeTab} setActiveTab={setActiveTab} />
-      <div className="w-4/5 flex flex-wrap justify-between gap-8 mx-auto p-6">
+      <div className="flex flex-wrap justify-between gap-4 mx-auto p-2 md:w-4/5 md:p-6 md:gap-8">
         {groceries.filter(grocery => !activeTab || activeTab === grocery.category).map(grocery => (
           <GroceryBox
             key={grocery.id}

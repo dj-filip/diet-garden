@@ -91,11 +91,18 @@ function MainSidebar() {
 
 
   return (
-    <Sidebar>
-      <Link href='/'>
-        <Logo />
-      </Link>
+    <Sidebar
+      side="left"
+      className="pt-8 gap-8 bg-sidebar"
+    >
       <SidebarContent>
+        <SidebarGroup>
+          <SidebarGroupContent>
+            <Link href='/'>
+              <Logo />
+            </Link>
+          </SidebarGroupContent>
+        </SidebarGroup>
         <SidebarGroup className="h-full  pb-15">
           {/* <SidebarGroupLabel>Application</SidebarGroupLabel> */}
           <SidebarGroupContent className="h-full">
