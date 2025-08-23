@@ -27,7 +27,7 @@ function GroceryBox({ grocery, onClick }: GroceryBoxProps) {
           <AvatarImage src={imageUrl} />
         </Avatar>
       </CardHeader>
-      <CardFooter className="flex-col justify-center">
+      <CardFooter className="flex-col justify-center px-0">
         <CardTitle className="h-8 flex items-end uppercase text-center">{grocery.name}</CardTitle>
         <CardDescription className="w-20 border-t-1 mt-2 pt-2 font-medium text-center">{grocery.nutrients.energy?.[0]?.amount} <span className="font-light italic">kcal</span></CardDescription>
       </CardFooter>

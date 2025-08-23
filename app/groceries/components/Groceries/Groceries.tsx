@@ -41,9 +41,12 @@ function Groceries({ groceries }: GroceriesProps) {
   console.log(groceries)
 
   return (
-    <div>
-      <GroceriesTabsNav activeTab={activeTab} setActiveTab={setActiveTab} />
-      <div className="flex flex-wrap justify-between gap-4 mx-auto p-2 md:w-4/5 md:p-6 md:gap-8">
+    <div className="pt-2">
+      <GroceriesTabsNav
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+      />
+      <div className="flex flex-wrap justify-between gap-4 mx-auto p-4 md:w-4/5 md:p-6 md:gap-8">
         {groceries.filter(grocery => !activeTab || activeTab === grocery.category).map(grocery => (
           <GroceryBox
             key={grocery.id}
