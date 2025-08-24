@@ -1,6 +1,6 @@
 "use client"
 
-import { Calendar } from "lucide-react"
+import { Calendar, PanelLeftCloseIcon, PanelLeftIcon } from "lucide-react"
 import { DashboardIcon, GroceriesIcon, MealsIcon } from "../icons"
 
 import {
@@ -14,11 +14,14 @@ import {
   SidebarMenuSub,
   SidebarMenuSubButton,
   SidebarMenuSubItem,
+  useSidebar,
 } from "@/components/ui/sidebar"
 import Logo from "../Logo/Logo"
 import { usePathname } from "next/navigation"
 import Link from "next/link"
 import slugify from "slugify"
+import { useIsMobile } from "@/hooks/use-mobile"
+import { Button } from "../ui/button"
 
 
 // Menu items.
@@ -87,8 +90,17 @@ function isActiveLink(pathname: string, itemUrl: string) {
 
 function MainSidebar() {
 
+
   const pathname = usePathname();
 
+  const { isMobile, setOpenMobile } = useSidebar();
+
+
+  const handleCloseOnMobile = () => {
+    if (isMobile) {
+      setOpenMobile(false);
+    }
+  }
 
   return (
     <Sidebar
@@ -97,10 +109,24 @@ function MainSidebar() {
     >
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupContent>
-            <Link href='/'>
+          <SidebarGroupContent
+            className="flex align-center justify-center"
+          >
+            <Link
+              href='/'
+              onClick={() => handleCloseOnMobile()}
+              className="grow"
+            >
               <Logo />
             </Link>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="ml-auto md:hidden"
+              onClick={() => handleCloseOnMobile()}
+            >
+              <PanelLeftCloseIcon />
+            </Button>
           </SidebarGroupContent>
         </SidebarGroup>
         <SidebarGroup className="h-full  pb-15">
@@ -116,6 +142,7 @@ function MainSidebar() {
                       href={item.url}
                       data-active-link={isActiveLink(pathname, item.url) ? 'true' : null}
                       className="[&>svg]:w-5 [&>svg]:h-auto gap-4 data-[active-link=true]:text-lime-500"
+                      onClick={() => handleCloseOnMobile()}
                     >
                       <item.icon />
                       <span className="text-lg">{item.title}</span>
@@ -134,6 +161,7 @@ function MainSidebar() {
                               })}`}
                               data-active-link={pathname === item.url}
                               className="cursor-pointer data-[active-link=true]:text-lime-500"
+                              onClick={() => handleCloseOnMobile()}
                             >
                               {item.title}
                             </Link>
